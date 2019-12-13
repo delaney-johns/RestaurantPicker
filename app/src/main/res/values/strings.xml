@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RestaurantPicker</string>
+    <string name="base_URL">https://developers.zomato.com/</string>
+    <string name="api_key">9a0b643697162e0f72d6b7e6ee9639bb</string>
+</resources>

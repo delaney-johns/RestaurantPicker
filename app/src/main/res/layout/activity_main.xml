@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etChooseCat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:padding="8dp"
+        android:background="@drawable/tv_background"
+        android:hint="Enter a category"
+        android:textColor="@color/white"
+        android:textColorHint="#A9A9A9"
+        android:textSize="16sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <Spinner
+        android:id="@+id/spinnerSort"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <com.ait.restaurantpicker.FButton
+        android:id="@+id/btnSeeResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:shadowColor="@color/fbutton_color_asbestos"
+        android:text="See restaurants"
+        android:textColor="#494949"
+        android:textSize="18sp"
+        fbutton:buttonColor="@color/fbutton_color_clouds"
+        fbutton:cornerRadius="5dp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintHorizontal_bias="0.0"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/textView"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/tv_background"
+        android:padding="8dp"
+        android:text="Sort by:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        fbutton:layout_constraintStart_toStartOf="@+id/etChooseCat"
+        fbutton:layout_constraintTop_toBottomOf="@+id/etChooseCat" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/prata_regular"
+        android:text="Find a new restaurant"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
